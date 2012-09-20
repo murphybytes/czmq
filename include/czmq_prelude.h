@@ -220,7 +220,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#if (!defined __WINDOWS__)
 #include <stdbool.h>
+#endif
 #include <string.h>
 #include <time.h>
 #include <errno.h>
@@ -229,6 +231,9 @@
 #include <signal.h>
 #include <setjmp.h>
 #include <assert.h>
+
+
+
 
 //- System-specific include files -------------------------------------------
 
